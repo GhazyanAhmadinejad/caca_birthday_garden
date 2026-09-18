@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#fff7f8" />
+  <meta name="description" content="A tiny birthday garden made especially for Caca." />
+  <title>Caca's Birthday Garden 🌷</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="locked">
+  <div class="petal-layer" id="petalLayer" aria-hidden="true"></div>
+
+  <section class="intro" id="intro">
+    <div class="intro-card">
+      <div class="tiny-flower">🌷</div>
+      <p class="eyebrow">pssst... Caca!</p>
+      <h1>there's a little something waiting for you ♡</h1>
+      <p class="soft-copy">a tiny birthday garden, made just for you.</p>
+      <button class="primary-btn" id="openBtn">open your surprise <span>♡</span></button>
+    </div>
+  </section>
+
+  <main id="mainContent">
+    <section class="hero section">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">today is your day, princess 🌷</p>
+        <h1>Happy Birthday,<br><em>Cingtakuuu!</em> ♡</h1>
+        <p class="hero-sub">Welcome to Caca's tiny birthday garden — soft, sweet, and a little bit menye.</p>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="flower flower-a">✿</div>
+        <div class="flower flower-b">❀</div>
+        <div class="flower flower-c">✽</div>
+        <div class="portrait-frame">
+          <img src="assets/hero.webp" alt="Caca smiling sweetly" />
+        </div>
+        <div class="mini-note">certified birthday princess ♡</div>
+      </div>
+    </section>
+
+    <section class="section personality">
+      <div class="section-heading reveal">
+        <p class="eyebrow">today's birthday girl</p>
+        <h2>Caca starter pack 🎀</h2>
+        <p>five extremely scientific facts. totally verified.</p>
+      </div>
+
+      <div class="card-grid">
+        <article class="trait-card reveal">
+          <span>🌸</span>
+          <h3>Shy little princess</h3>
+          <p>malu-malu... but still wants the attention hehe.</p>
+        </article>
+
+        <article class="trait-card reveal">
+          <span>🧸</span>
+          <h3>Certified anak bayi</h3>
+          <p>status: requires extra care, cuddles, and patience.</p>
+        </article>
+
+        <article class="trait-card reveal">
+          <span>💗</span>
+          <h3>Clingy department</h3>
+          <p>personal space? hmm... sounds optional.</p>
+        </article>
+
+        <article class="trait-card reveal">
+          <span>👑</span>
+          <h3>Princess mode</h3>
+          <p>always ON. cannot be disabled in settings.</p>
+        </article>
+
+        <article class="trait-card reveal wide">
+          <span>🎀</span>
+          <h3>Menye level</h3>
+          <p>extremely dangerous. approach with love and snacks.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">tiny photo corner</p>
+        <h2>a little gallery of Caca ♡</h2>
+        <p>pretty girl doing pretty girl things.</p>
+      </div>
+
+      <div class="polaroid-stack">
+        <figure class="polaroid tilt-left reveal">
+          <img src="assets/gallery-1.webp" alt="Caca holding flowers" />
+          <figcaption>princess spotted 🌷</figcaption>
+        </figure>
+
+        <figure class="polaroid tilt-right reveal">
+          <img src="assets/gallery-2.webp" alt="Caca in black outfit" />
+          <figcaption>main character energy</figcaption>
+        </figure>
+
+        <figure class="polaroid tilt-left-sm reveal">
+          <img src="assets/gallery-3.webp" alt="Caca smiling while holding a drink" />
+          <figcaption>Caca being Caca ♡</figcaption>
+        </figure>
+
+        <figure class="polaroid tilt-right-sm reveal">
+          <img src="assets/gallery-4.webp" alt="Caca in graduation sash" />
+          <figcaption>certified cutie</figcaption>
+        </figure>
+
+        <figure class="polaroid tilt-left reveal">
+          <img src="assets/gallery-5.webp" alt="Caca in soft pink hijab" />
+          <figcaption>soft girl supremacy ✿</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section message-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">a tiny note</p>
+        <h2>one little message for the birthday girl 💌</h2>
+      </div>
+
+      <button class="envelope reveal" id="messageBtn" aria-expanded="false">
+        <span class="envelope-icon">💌</span>
+        <span>tap to open</span>
+      </button>
+
+      <div class="message-card" id="messageCard" aria-hidden="true">
+        <span class="message-flower">🌷</span>
+        <p>
+          Happy Birthday my honey bunny sweety loveku teycingta ♡
+        </p>
+        <p>
+          Wishing you a smooth journey and happiness every sec of the day.
+        </p>
+        <small>for Caca, always with extra sweetness ✿</small>
+      </div>
+    </section>
+
+    <section class="section cake-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">birthday ritual</p>
+        <h2>make a wish, princess! ✨</h2>
+        <p>close your eyes dulu... jangan curang ya.</p>
+      </div>
+
+      <div class="cake-wrap reveal">
+        <div class="cake" aria-label="birthday cake">
+          <div class="candle">
+            <div class="flame" id="flame"></div>
+            <div class="wick"></div>
+          </div>
+          <div class="icing">✿ &nbsp; ♡ &nbsp; ✿</div>
+          <div class="cake-body">
+            <span>HAPPY</span>
+            <strong>CACA</strong>
+          </div>
+          <div class="plate"></div>
+        </div>
+
+        <button class="primary-btn" id="blowBtn">blow the candle ♡</button>
+        <div class="wish-result" id="wishResult" role="status">
+          <strong>YAAAYYY!! 🌷♡</strong>
+          <span>semoga semua wish Caca dikabulin. aamiin.</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section ending">
+      <div class="ending-card reveal">
+        <div class="ending-photo">
+          <img src="assets/ending.webp" alt="A photostrip memory" />
+        </div>
+        <div class="ending-copy">
+          <p class="eyebrow">almost the end...</p>
+          <h2>and that's your little birthday garden ♡</h2>
+          <p>
+            Happy Birthday once again, Cingtakuuu!<br>
+            semoga hari ini penuh hal-hal yang bikin Caca senyum 🌷
+          </p>
+          <button class="primary-btn" id="lastBtn">tap for one last surprise</button>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>made with too much pink, flowers, and love ♡</p>
+    </footer>
+  </main>
+
+  <button class="music-btn" id="musicBtn" aria-label="Toggle birthday music" title="Add assets/jatuh-suka.mp3 to enable music">
+    <span class="music-disc">♫</span>
+  </button>
+
+  <audio id="bgMusic" loop preload="none">
+    <source src="assets/jatuh-suka.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="final-overlay" id="finalOverlay" aria-hidden="true">
+    <button class="close-final" id="closeFinal" aria-label="Close final surprise">×</button>
+    <div class="final-center">
+      <div class="big-flower">🌸</div>
+      <p class="eyebrow">okay NOW it's the end...</p>
+      <h2>HAPPY BIRTHDAY CACA!!!</h2>
+      <p>yeayyyy princess dayyyyy ♡♡♡</p>
+      <div class="mwah-row">
+        <span>mwah</span><span>🌷</span><span>mwah</span><span>♡</span><span>mwah</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
