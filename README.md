@@ -29,3 +29,15 @@ Atau cukup double-click `index.html` untuk preview dasar.
 
 ## Edit teks
 Semua copy utama ada di `index.html`, jadi gampang dicari dan diganti.
+
+
+## Kalau upload lewat website GitHub
+HTML website ini mencari gambar/audio di folder `assets/`.
+Kalau file gambar di-upload ke root repository, gambar akan rusak.
+
+Cara aman:
+1. Pastikan ada folder `assets` di repository.
+2. Masuk ke folder `assets` di GitHub.
+3. Klik **Add file → Upload files**.
+4. Upload `hero.webp`, `gallery-1.webp` s.d. `gallery-5.webp`, `ending.webp`, dan `jatuh-suka.mp3` di dalam folder tersebut.
+5. Di root repository hanya perlu `index.html`, `style.css`, `script.js`, dan `README.md`.

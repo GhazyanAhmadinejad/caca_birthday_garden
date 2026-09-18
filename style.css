@@ -18,10 +18,16 @@
 html {
   scroll-behavior: smooth;
   background: var(--bg);
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: "DM Sans", system-ui, sans-serif;
   color: var(--ink);
   background:
@@ -39,6 +45,12 @@ button {
   font: inherit;
   border: 0;
   cursor: pointer;
+}
+
+main {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 .section {
@@ -562,7 +574,12 @@ footer {
 }
 
 @media (max-width: 760px) {
-  .section { width: min(100% - 28px, 650px); padding: 68px 0; }
+  .section {
+    width: calc(100% - 28px);
+    max-width: 650px;
+    margin-inline: auto;
+    padding: 68px 0;
+  }
 
   .hero {
     min-height: auto;
@@ -588,7 +605,19 @@ footer {
     margin: 0 auto;
   }
 
-  .polaroid { width: 92%; margin-inline: auto; }
+  .polaroid {
+    width: min(92%, 390px);
+    margin-inline: auto;
+  }
+
+  .hero-copy,
+  .hero-visual,
+  .section-heading,
+  .card-grid,
+  .polaroid-stack,
+  .ending-card {
+    min-width: 0;
+  }
 
   .ending-card {
     grid-template-columns: 1fr;
